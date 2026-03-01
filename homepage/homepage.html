@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="home_page.css">
+    </head>
+    <body>
+      <div class="parent_flex">
+        <p class="welcome_text">
+          Hello&excl; Welcome to my portfolio &#58;&ndash;&rpar;
+        </p>
+
+        <div class="button_wrapper">
+          <button onclick="showImage()" class="exit_button">
+            x
+          </button>
+          <button class="continue_button">
+            click here to continue
+          </button>
+        </div>
+      </div>
+
+      <img id="spongebob_crying_popup" src="crying-spongebob.jpg" alt="Popup Image">
+
+      <script>
+      function showImage() {
+        var img = document.getElementById('spongebob_crying_popup');
+
+        img.classList.add("show");
+
+        setTimeout(function() {
+          img.classList.remove("show");
+        }, 1350);
+      }
+</script>
+    </body>
+</html>
