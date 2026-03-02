@@ -80,7 +80,7 @@ body{
 }
 
 .exit_button:hover{
-  box-shadow: 0 0 33px rgb(238, 0, 0);
+  box-shadow: 0 0 35px rgb(238, 0, 0);
 }
 
 .exit_button:active{
