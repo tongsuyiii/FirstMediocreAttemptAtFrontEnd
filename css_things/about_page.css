@@ -1,0 +1,49 @@
+body{
+  background-color: rgb(62, 0, 135);
+}
+
+.parent_grid{
+  position : absolute;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  left: 50%;
+  top: 50%;
+
+  width: 1500px;
+  height: 146px;
+
+  margin-left : -750px;
+  margin-top  : -73px;
+}
+
+.about_title{
+  flex: 1;
+
+  font-size: 65px;
+  font-family: monospace;
+  color: rgb(255, 222, 176);
+
+  margin-bottom: 8px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  align-self: flex-start;
+}
+
+.wtv{
+  flex: 2;
+
+  width: 100%;
+  text-align: justify;
+
+  font-size: 21px;
+  font-family: monospace;
+  color: rgb(255, 222, 176);
+
+  line-height: 1.7;
+}
