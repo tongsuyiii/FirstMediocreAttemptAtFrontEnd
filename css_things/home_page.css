@@ -54,7 +54,7 @@ body{
 }
 
 .continue_button:hover{
-  box-shadow: 0 0 58px rgb(0, 240, 8);
+  box-shadow: 0 0 73px rgb(0, 240, 8);
 }
 
 .continue_button:active{
@@ -100,7 +100,7 @@ body{
 
   opacity: 0;
 
-  transition: opacity 1.2s ease;
+  transition: opacity 1.1s ease;
   pointer-events: none;
   z-index: 1000;
 }
