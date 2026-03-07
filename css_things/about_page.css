@@ -2,6 +2,18 @@ body{
   background-color: rgb(62, 0, 135);
 }
 
+a{
+  text-decoration: none;
+}
+
+a:active{
+  color: black;
+}
+
+*{
+  cursor: url("/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/maple_cursor.png"), auto;
+}
+
 .parent_grid{
   position : absolute;
 
@@ -27,7 +39,7 @@ body{
   font-family: monospace;
   color: rgb(255, 222, 176);
 
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -47,3 +59,35 @@ body{
 
   line-height: 1.7;
 }
+
+.continue_button{
+  display: flex;
+
+  align-items: center; 
+  justify-content: center;
+
+  font-size: 18px;
+  font-family: monospace;
+
+  background-color: rgb(255, 234, 206);
+  color: black;
+
+  width: 255px;
+  height: 100%;
+
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgb(0, 223, 7);
+  border-width: 2.3px;
+
+  transition: box-shadow 0.35s;
+
+  padding: 15px 90px;
+
+  margin-top: 11px;
+}
+
+.continue_button:hover{
+  box-shadow: 0 0 73px rgb(0, 240, 8);
+}
+
