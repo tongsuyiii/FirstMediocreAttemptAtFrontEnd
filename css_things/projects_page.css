@@ -46,7 +46,7 @@ body{
 }
 
 .yolo_planet img{
-  width: 485px;
+  width: 495px;
 }
 
 .yolo_planet:hover{
@@ -59,12 +59,12 @@ body{
   background: none;
   border: none;
 
-  margin-top: 155px;
-  margin-left: 1085px;
+  margin-top: 325px;
+  margin-left: 1185px;
 }
 
 .ml_planet img{
-  width: 485px;
+  width: 455px;
 }
 
 .ml_planet:hover{
