@@ -2,10 +2,44 @@
 <html>
   <head>
     <title>Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/Users/suyi/FirstMediocreAttemptAtFrondEnd/css_things/projects_page.css">
+    <script defer src="/Users/suyi/FirstMediocreAttemptAtFrondEnd/javasc_things/script.js"></script>
   </head>
   <body>
     <div class="middle_grid">
-      <p class="middle_info">Click on a planet &#40;of my own creative fictitious endeavours&#41; to interact</p>
+      <p class="middle_info">Click on a planet of my own creative fictitious endeavours to interact</p>
+    </div>
+
+    <button data-modal-target="#modal1" class="yolo_planet">
+      <img src="/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/planet_ONE.png" alt="open yolo proj">
+    </button>
+    <div class="modal" id="modal1">
+      <div class="modal_header">
+        <div class="title">Yolov7 Open Source Project</div>
+        <button data-close-button class="close_button">&times;</button>
+      </div>
+      <div class="modal_body">
+        hello klajfroubhroubgh lqiuehroi
+      </div>
+    </div>
+
+    <button data-modal-target="#modal2" class="ml_planet">
+      <img src="/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/planet_TWO.png" alt="open ml proj">
+    </button>
+    <div class="modal" id="modal2">
+      <div class="modal_header">
+        <div class="title">ML Project</div>
+        <button data-close-button class="close_button">&times;</button>
+      </div>
+      <div class="modal_body">
+        hello wfefweuehroi
+      </div>
+    </div>
+
+    <div id="overlay"></div>
   </body>
 </html>

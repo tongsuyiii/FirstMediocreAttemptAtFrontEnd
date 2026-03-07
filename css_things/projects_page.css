@@ -31,4 +31,121 @@ body{
   color: rgb(255, 222, 176);
   margin-top: 0px;
   margin-bottom: 0px;
+
+  z-index: 10;
+}
+
+.yolo_planet{
+  position: absolute;
+
+  background: none;
+  border: none;
+
+  margin-top: 81px;
+  margin-left: 108px;
+}
+
+.yolo_planet img{
+  width: 485px;
+}
+
+.yolo_planet:hover{
+  filter:drop-shadow(0 0 58px rgb(255, 222, 176));
+}
+
+.ml_planet{
+  position: absolute;
+
+  background: none;
+  border: none;
+
+  margin-top: 155px;
+  margin-left: 1085px;
+}
+
+.ml_planet img{
+  width: 485px;
+}
+
+.ml_planet:hover{
+  filter:drop-shadow(0 0 58px rgb(255, 222, 176));
+}
+
+.modal{
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+
+  background-color: rgb(255, 234, 206);;
+  z-index: 10;
+
+  width: 985px;
+  max-width: 80%;
+
+  transition: 300ms ease-in-out
+}
+
+.modal.active{
+  transform: translate(-50%, -50%) scale(1)
+}
+
+.modal_header{
+  display: flex;
+  padding: 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal_header .title{
+  font-size: 57px;
+  font-family: monospace;
+  font-weight: bolder;
+}
+
+.modal_header .close_button{
+  font-size: 20px;
+  background-color: rgb(193, 0, 0);
+  color: white;
+
+  border-radius: 20px;
+  border-style: solid;
+  border-color: rgb(193, 0, 0);
+  border-width: 1.8px;
+
+  transition: box-shadow 0.35s;
+}
+
+.modal_header .close_button:hover{
+  box-shadow: 0 0 35px rgb(238, 0, 0);
+}
+
+.modal_body{
+  font-size: 25px;
+  padding: 10px 15px;
+  font-family: monospace;
+
+  margin-top: 22px;
+}
+
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
 }
