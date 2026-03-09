@@ -85,7 +85,7 @@ body{
   background-color: rgb(255, 234, 206);;
   z-index: 10;
 
-  width: 985px;
+  width: 1200px;
   max-width: 80%;
 
   transition: 300ms ease-in-out
@@ -129,10 +129,39 @@ body{
   font-size: 25px;
   padding: 10px 15px;
   font-family: monospace;
+  display: flex;
+  flex-direction: column;
 
-  margin-top: 22px;
+  margin-top: 25px;
+  gap: 48px;
+
+  line-height: 1.3;
+  text-align: justify;
+  align-items: center;
 }
 
+.view_things{
+  font-size: 25px;
+  margin-bottom: 18px;
+
+  font-family: monospace;
+  background-color: rgb(244, 255, 213);
+  color: black;
+
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgb(0, 223, 7);
+  border-width: 2.3px;
+
+  transition: box-shadow 0.35s;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 558px;
+}
+
+.view_things:hover{
+  box-shadow: 0 0 73px rgb(0, 240, 8);
+}
 
 #overlay{
   position: fixed;
