@@ -59,12 +59,12 @@ body{
   background: none;
   border: none;
 
-  margin-top: 325px;
-  margin-left: 1185px;
+  margin-top: 348px;
+  margin-left: 1108px;
 }
 
 .ml_planet img{
-  width: 464px;
+  width: 468px;
 }
 
 .ml_planet:hover{
@@ -109,11 +109,14 @@ body{
 }
 
 .modal_header .close_button{
-  font-size: 20px;
+  font-size: 34px;
   background-color: rgb(193, 0, 0);
   color: white;
 
-  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  border-radius: 34px;
   border-style: solid;
   border-color: rgb(193, 0, 0);
   border-width: 1.8px;
