@@ -41,12 +41,14 @@ body{
   background: none;
   border: none;
 
-  margin-top: 45px;
-  margin-left: 95px;
+  margin-top: 35px;
+  margin-left: 59px;
+
+  z-index: 5;
 }
 
 .yolo_planet img{
-  width: 495px;
+  width: 380px;
 }
 
 .yolo_planet:hover{
@@ -59,12 +61,14 @@ body{
   background: none;
   border: none;
 
-  margin-top: 412px;
-  margin-left: 1158px;
+  margin-top: 585px;
+  margin-left: 980px;
+
+  z-index: 5;
 }
 
 .ml_planet img{
-  width: 468px;
+  width: 368px;
 }
 
 .ml_planet:hover{
@@ -77,12 +81,14 @@ body{
   background: none;
   border: none;
 
-  margin-top: 518px;
-  margin-left: 428px;
+  margin-top: 565px;
+  margin-left: 255px;
+
+  z-index: 5;
 }
 
 .sea_planet img{
-  width: 398px;
+  width: 301px;
 }
 
 .sea_planet:hover{
@@ -95,16 +101,48 @@ body{
   background: none;
   border: none;
 
-  margin-top: 18px;
-  margin-left: 1088px;
+  margin-top: 2px;
+  margin-left: 730px;
+
+  z-index: 5;
 }
 
 .port_planet img{
-  width: 300px;
+  width: 240px;
 }
 
 .port_planet:hover{
   filter:drop-shadow(0 0 58px rgb(34, 255, 0));
+}
+
+.trail{
+  position: absolute;
+  left: 48%;
+  top: 48%;
+
+  width: 1500px;
+  height: 630px;
+
+  margin-left : -750px;
+  margin-top  : -315px;
+}
+
+.star{
+  position: absolute;
+
+  background: none;
+  border: none;
+
+  margin-top: 130px;
+  margin-left: 1258px;
+}
+
+.star img{
+  width: 500px;
+}
+
+.star:hover{
+  filter:drop-shadow(0 0 35px rgb(255, 252, 208));
 }
 
 .modal{
@@ -216,4 +254,60 @@ body{
 #overlay.active{
   opacity: 1;
   pointer-events: all;
+  z-index: 8;
+}
+
+.contact{
+  position: absolute;
+  font-family: monospace;
+  color: rgb(255, 222, 176);
+  font-size: 18px;
+  text-align: center;
+
+  margin-top: 355px;
+  margin-left: 1418px;
+}
+
+.yolo_title{
+  position: absolute;
+  font-family: monospace;
+  color: rgb(255, 222, 176);
+  font-size: 18px;
+  text-align: center;
+
+  margin-top: 216px;
+  margin-left: 117px;
+}
+
+.sea_title{
+  position: absolute;
+  font-family: monospace;
+  color: rgb(255, 222, 176);
+  font-size: 18px;
+  text-align: center;
+
+  margin-top: 713px;
+  margin-left: 385px;
+}
+
+.ml_title{
+  position: absolute;
+  font-family: monospace;
+  color: rgb(255, 222, 176);
+  font-size: 18px;
+  text-align: center;
+
+  margin-top: 751px;
+  margin-left: 1069px;
+}
+
+.port_title{
+  position: absolute;
+  font-family: monospace;
+  color: rgb(255, 222, 176);
+  font-size: 18px;
+  text-align: center;
+
+  margin-top: 126px;
+  margin-left: 800px;
 }
