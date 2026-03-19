@@ -48,7 +48,7 @@ body{
   border: none;
 
   margin-top: 35px;
-  margin-left: 59px;
+  margin-left: 61px;
 
   z-index: 5;
 }
@@ -67,8 +67,8 @@ body{
   background: none;
   border: none;
 
-  margin-top: 585px;
-  margin-left: 980px;
+  margin-top: 582px;
+  margin-left: 995px;
 
   z-index: 5;
 }
@@ -126,11 +126,13 @@ body{
   left: 48%;
   top: 48%;
 
-  width: 1500px;
+  width: 1410px;
   height: 630px;
 
   margin-left : -750px;
   margin-top  : -315px;
+
+  animation: fadeIn 3.5s ease-in-out;
 }
 
 .star{
@@ -140,11 +142,16 @@ body{
   border: none;
 
   margin-top: 130px;
-  margin-left: 1258px;
+  margin-left: 1208px;
+
+  animation: fadeIn 2s ease-in-out;
 }
 
 .star img{
   width: 500px;
+
+  animation: fadeIn 2s ease-in-out;
+  filter:drop-shadow(0 0 40px rgb(255, 241, 42));
 }
 
 .star:hover{
@@ -162,7 +169,7 @@ body{
   border-color: black;
   border-radius: 10px;
 
-  background-color: rgb(255, 234, 206);;
+  background-color: rgb(255, 243, 247);
   z-index: 10;
 
   width: 1200px;
@@ -172,7 +179,7 @@ body{
 }
 
 .modal.active{
-  transform: translate(-50%, -50%) scale(1)
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .modal_header{
@@ -271,7 +278,9 @@ body{
   text-align: center;
 
   margin-top: 355px;
-  margin-left: 1455px;
+  margin-left: 1405px;
+
+  animation: fadeIn 3.5s ease-in-out;
 }
 
 .yolo_title{
@@ -303,8 +312,8 @@ body{
   font-size: 18px;
   text-align: center;
 
-  margin-top: 751px;
-  margin-left: 1069px;
+  margin-top: 748px;
+  margin-left: 1084px;
 }
 
 .port_title{

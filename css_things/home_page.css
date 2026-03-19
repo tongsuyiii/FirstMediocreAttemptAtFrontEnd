@@ -1,11 +1,21 @@
 body{
   background-color: rgb(62, 0, 135);
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
 }
 
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@keyframes spin {
+  0% {}
+  100% {transform: rotate(720deg);}
+}
+
+@keyframes slide_in_left {
+  0% {transform: translateX(-300px);}
+  100% {transform: translateX(-0px);}
 }
 
 a{
@@ -36,10 +46,10 @@ a:active{
   top: 50%;
 
   width: 1200px;
-  height: 150px;
+  height: 160px;
 
   margin-left : -600px;
-  margin-top  : -75px;
+  margin-top  : -80px;
 }
 
 .welcome_text{
@@ -48,6 +58,9 @@ a:active{
   color: rgb(255, 222, 176);
   margin-bottom: 0px;
   margin-top: 0px;
+
+  animation-name: slide_in_left;
+  animation-duration: 2.4s;
 }
 
 .continue_button{
@@ -94,6 +107,9 @@ a:active{
 
 .exit_button:hover{
   box-shadow: 0 0 35px rgb(238, 0, 0);
+
+  animation-duration: 5s;
+  animation-name: spin;
 }
 
 #spongebob_crying_popup{
