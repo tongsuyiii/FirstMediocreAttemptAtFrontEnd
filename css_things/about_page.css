@@ -31,10 +31,12 @@ a:active{
   left: 50%;
   top: 50%;
 
-  width: 1500px;
+  width: 1200px;
   height: 146px;
 
-  margin-left : -750px;
+  min-width: 1000px;
+
+  margin-left : -600px;
   margin-top  : -73px;
 }
 
@@ -90,7 +92,7 @@ a:active{
 
   padding: 15px 90px;
 
-  margin-top: 11px;
+  margin-top: 21px;
 }
 
 .continue_button:hover{

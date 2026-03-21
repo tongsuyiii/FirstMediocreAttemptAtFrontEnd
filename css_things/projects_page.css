@@ -47,8 +47,8 @@ body{
   background: none;
   border: none;
 
-  margin-top: 35px;
-  margin-left: 61px;
+  margin-top: 59px;
+  margin-left: 201px;
 
   z-index: 5;
 }
@@ -67,8 +67,8 @@ body{
   background: none;
   border: none;
 
-  margin-top: 582px;
-  margin-left: 995px;
+  margin-top: 435px;
+  margin-left: 980px;
 
   z-index: 5;
 }
@@ -87,7 +87,7 @@ body{
   background: none;
   border: none;
 
-  margin-top: 565px;
+  margin-top: 500px;
   margin-left: 255px;
 
   z-index: 5;
@@ -108,7 +108,7 @@ body{
   border: none;
 
   margin-top: 2px;
-  margin-left: 730px;
+  margin-left: 520px;
 
   z-index: 5;
 }
@@ -123,8 +123,6 @@ body{
 
 .trail{
   position: absolute;
-  left: 48%;
-  top: 48%;
 
   width: 1410px;
   height: 630px;
@@ -133,6 +131,8 @@ body{
   margin-top  : -315px;
 
   animation: fadeIn 3.5s ease-in-out;
+
+  flex-shrink: 0;
 }
 
 .star{
@@ -141,16 +141,16 @@ body{
   background: none;
   border: none;
 
-  margin-top: 130px;
-  margin-left: 1208px;
+  margin-top: 55px;
+  margin-left: 980px;
 
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
 }
 
 .star img{
   width: 500px;
 
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
   filter:drop-shadow(0 0 40px rgb(255, 241, 42));
 }
 
@@ -277,10 +277,12 @@ body{
   font-size: 18px;
   text-align: center;
 
-  margin-top: 355px;
-  margin-left: 1405px;
+  margin-top: 280px;
+  margin-left: 1179px;
 
-  animation: fadeIn 3.5s ease-in-out;
+  animation: fadeIn 4s ease-in-out;
+
+  z-index: 6;
 }
 
 .yolo_title{
@@ -290,8 +292,8 @@ body{
   font-size: 18px;
   text-align: center;
 
-  margin-top: 216px;
-  margin-left: 117px;
+  margin-top: 240px;
+  margin-left: 247px;
 }
 
 .sea_title{
@@ -301,8 +303,10 @@ body{
   font-size: 18px;
   text-align: center;
 
-  margin-top: 713px;
-  margin-left: 385px;
+  margin-top: 648px;
+  margin-left: 382px;
+
+  z-index: 6;
 }
 
 .ml_title{
@@ -312,8 +316,10 @@ body{
   font-size: 18px;
   text-align: center;
 
-  margin-top: 748px;
-  margin-left: 1084px;
+  margin-top: 600px;
+  margin-left: 1072px;
+
+  z-index: 6;
 }
 
 .port_title{
@@ -324,5 +330,7 @@ body{
   text-align: center;
 
   margin-top: 126px;
-  margin-left: 800px;
+  margin-left: 590px;
+
+  z-index: 6;
 }
