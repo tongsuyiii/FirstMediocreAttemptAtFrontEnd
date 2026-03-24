@@ -10,122 +10,92 @@
     <script defer src="/Users/suyi/FirstMediocreAttemptAtFrondEnd/javasc_things/script.js"></script>
   </head>
   <body>
-    <div class="middle_grid">
-      <p class="middle_info">&num;&num;&num; Hey there&excl; Click on a planet to interact&excl;</p>
-    </div>
-
-    <button data-modal-target="#modal1" class="yolo_planet">
-      <img src="/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/planet_ONE.png" alt="open yolo proj">
-    </button>
-    <div class="modal" id="modal1">
-      <div class="modal_header">
-        <div class="title">YOLOv8 in Detecting Lesions</div>
-        <button data-close-button class="close_button">&times;</button>
-      </div>
-      <div class="modal_body">
-        <p class="things">
-          The YOLOv8 model was used to detect lesions from raw images of the ISIC 2017 dataset. 
-          The dataset can be found here&#58; <a href="https://challenge.isic-archive.com/data/#2017" target="_blank">
-            link to dataset</a>
-          <br>
-          <br>
-          The model has achieved high precision and high recall levels simultaneously. It is able to 
-          correctly detect lesions from the ISIC 2017 dataset with an average confidence of 99%.
-        </p>
-        <a href="https://github.com/tongsuyiii/PatternAnalysis-2025/tree/topic-recognition/recognition/YOLOv8_LesionDetection_47609994" target="_blank">
-          <button class="view_things">View Project</button>
-        </a>
-      </div>
-    </div>
-
-    <button data-modal-target="#modal2" class="ml_planet">
-      <img src="/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/planet_TWO.png" alt="open ml proj">
-    </button>
-    <div class="modal" id="modal2">
-      <div class="modal_header">
-        <div class="title">Machine Learning Report on the Varying Acceleration of Table Tennis Swings</div>
-        <button data-close-button class="close_button">&times;</button>
-      </div>
-      <div class="modal_body">
-        <p class="things">
-          K-Nearest Neighbours, Linear Regression, and Logistic Regression were applied to data containing the 
-          acceleration of table tennis players&rsquo; swings. The dataset can be found here&#58; 
-          <a href="https://datadryad.org/dataset/doi:10.5061/dryad.0zpc8677f" target="_blank">link to dataset</a>
-          <br>
-          <br>
-          Evaluation was made in regards to choosing between K-nearest neighbours and logistic regression 
-          to categorise a player&rsquo;s gender based on the acceleration of his or her swing. 
-          <br>
-          <br>
-          Linear regression was also applied to investigate any potential linear positive relationship 
-          between the maximum acceleration of a player&rsquo;s swing, and the mean and variance of the x, y, 
-          and z axes accelerations.
-        </p>
-
-        <a href="/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/s4760999_4702_report.pdf" target="_blank">
-          <button class="view_things">View Report</button>
-        </a>
-      </div>
-    </div>
-
-    <button data-modal-target="#modal3" class="sea_planet">
-      <img src="/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/planet_THREE.png" alt="open sea proj">
-    </button>
-    <div class="modal" id="modal3">
-      <div class="modal_header">
-        <div class="title">HereToo</div>
-        <button data-close-button class="close_button">&times;</button>
-      </div>
-      <div class="modal_body">
-        <p class="things">
-          This was a group project and we built a website that aimed to better facilitate communication in meetings 
-          that consist of a hybrid audience. By a hybrid audience, we mean an audience whom are either attending 
-          the meeting in-person or online.
-          <br>
-          <br>
-          Our website bridged the awkwardness by providing friend suggestions to each participant through an algorithm 
-          that grouped people based on their interests and field of expertise. I wrote this algorithm using Python by 
-          computing Jaccard similarity and deriving similarity scores.
-        </p>
-        <a href="https://github.com/max9753/SEA-together-at-a-distance/tree/Refactor" target="_blank">
-          <button class="view_things">View Project</button>
-        </a>
-      </div>
-    </div>
-
-    <a href="https://github.com/tongsuyiii/FirstMediocreAttemptAtFrondEnd" target="_blank">
-      <button class="port_planet">
-        <img src="/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/planet_FOUR.png" alt="open port git">
-      </button>
+    <a href="/Users/suyi/FirstMediocreAttemptAtFrondEnd/html_things/about_page.html" class="back_button">
+      Go back to About
     </a>
     
-    <img class="trail" src="/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/shooting_trail.png" alt="trail of star">
+    <div class="middle_grid">
+      <p class="middle_info">Click on a project&excl;</p>
+    </div>
 
-    <a href="/Users/suyi/FirstMediocreAttemptAtFrondEnd/html_things/contact_page.html">
-      <button class="star">
-        <img src="/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/star.png" alt="contact star">
+    <div class="grid_container">
+      <button data-modal-target="#modal1" class="grid_item">Detecting Lesions<br>using YOLOv8</button>
+      <div class="modal" id="modal1">
+        <div class="modal_header">
+          <div class="title">YOLOv8 in Detecting Lesions</div>
+          <button data-close-button class="close_button">&times;</button>
+        </div>
+        <div class="modal_body">
+          <p class="things">
+            The YOLOv8 model was used to detect lesions from raw images of the ISIC 2017 dataset. 
+            The dataset can be found here&#58; <a class="mod_ext" href="https://challenge.isic-archive.com/data/#2017" target="_blank">
+              link to dataset</a>
+            <br>
+            <br>
+            The model has achieved high precision and high recall levels simultaneously. It is able to 
+            correctly detect lesions from the ISIC 2017 dataset with an average confidence of 99%.
+          </p>
+          <a href="https://github.com/tongsuyiii/PatternAnalysis-2025/tree/topic-recognition/recognition/YOLOv8_LesionDetection_47609994" target="_blank">
+            <button class="view_things">View Project</button>
+          </a>
+        </div>
+      </div>
+
+      <button data-modal-target="#modal2" class="grid_item">KNN, Linear Regression,<br>and Logistic Regression<br>on Table Tennis Swings</button>
+      <div class="modal" id="modal2">
+        <div class="modal_header">
+          <div class="title">Machine Learning Report on the Varying Acceleration of Table Tennis Swings</div>
+          <button data-close-button class="close_button">&times;</button>
+        </div>
+        <div class="modal_body">
+          <p class="things">
+            K-Nearest Neighbours, Linear Regression, and Logistic Regression were applied to data containing the 
+            acceleration of table tennis players&rsquo; swings. The dataset can be found here&#58; 
+            <a class="mod_ext" href="https://datadryad.org/dataset/doi:10.5061/dryad.0zpc8677f" target="_blank">link to dataset</a>
+            <br>
+            <br>
+            Evaluation was made in regards to choosing between K-nearest neighbours and logistic regression 
+            to categorise a player&rsquo;s gender based on the acceleration of his or her swing. 
+            <br>
+            <br>
+            Linear regression was also applied to investigate any potential linear positive relationship 
+            between the maximum acceleration of a player&rsquo;s swing, and the mean and variance of the x, y, 
+            and z axes accelerations.
+          </p>
+
+          <a href="/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/s4760999_4702_report.pdf" target="_blank">
+            <button class="view_things">View Report</button>
+          </a>
+        </div>
+      </div>
+
+      <button data-modal-target="#modal3" class="grid_item">HereToo
       </button>
-    </a>
+      <div class="modal" id="modal3">
+        <div class="modal_header">
+          <div class="title">HereToo</div>
+          <button data-close-button class="close_button">&times;</button>
+        </div>
+        <div class="modal_body">
+          <p class="things">
+            This was a group project and we built a website that aimed to better facilitate communication in meetings 
+            that consist of a hybrid audience. By a hybrid audience, we mean an audience whom are either attending 
+            the meeting in-person or online.
+            <br>
+            <br>
+            Our website bridged the awkwardness by providing friend suggestions to each participant through an algorithm 
+            that grouped people based on their interests and field of expertise. I wrote this algorithm using Python by 
+            computing Jaccard similarity and deriving similarity scores.
+          </p>
+          <a href="https://github.com/max9753/SEA-together-at-a-distance/tree/Refactor" target="_blank">
+            <button class="view_things">View Project</button>
+          </a>
+        </div>
+      </div>
 
-
-    <div class="contact">
-      <p>OR HERE TO<br>GET IN TOUCH</p>
-    </div>
-
-    <div class="yolo_title">
-      <p>YOLOv8 IN LESION DETECTION</p>
-    </div>
-
-    <div class="sea_title">
-      <p>HereToo</p>
-    </div>
-
-    <div class="ml_title">
-      <p>MACHINE LEARNING<br>REPORT ON<br>TABLE TENNIS SWINGS</p>
-    </div>
-
-    <div class="port_title">
-      <p>THIS WEBSITE</p>
+      <a class="grid_item" href="/Users/suyi/FirstMediocreAttemptAtFrondEnd/html_things/contact_page.html">
+        <button class="item">Or here to<br>get in touch</button>
+      </a>
     </div>
 
     <div id="overlay"></div>

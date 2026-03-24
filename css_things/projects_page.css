@@ -1,11 +1,31 @@
 body{
-  background-color: rgb(62, 0, 135);
   animation: fadeIn 1s ease-in-out;
+
+  background-image: url('/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/t.jpg');
+  background-size: cover;                
+  background-position: center;           
+  background-repeat: no-repeat;          
+  background-attachment: fixed;          
+  min-height: 100vh;  
 }
 
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@keyframes myAnimation {
+  0%   {font-size: 100%;}
+  10%  {font-size: 100%;}
+  20%  {font-size: 175%;}
+  30%  {font-size: 100%;}
+  40%  {font-size: 150%;}
+  50%  {font-size: 100%;}
+  60%  {font-size: 120%;}
+  70%  {font-size: 100%;}
+  80%  {font-size: 100%;}
+  90%  {font-size: 100%;}
+  100%  {font-size: 100%;}
 }
 
 *{
@@ -31,131 +51,100 @@ body{
 }
 
 .middle_info{
-  font-family: monospace;
-  font-size: 29px;
+  /* the one that says click on proj */
+  font-size: 69px;
+  font-family: 'Arial Black', sans-serif;
+  font-style: italic;
 
-  color: rgb(255, 222, 176);
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 1px rgb(78, 78, 78); 
+
+  letter-spacing: -5px;
+  
   margin-top: 0px;
   margin-bottom: 0px;
-
-  z-index: 10;
 }
 
-.yolo_planet{
+.grid_container {
   position: absolute;
 
-  background: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 170px; 
+
+  justify-content: center;
+  align-items: center;
+
+  left: 50%;
+  top: 50%;
+
+  width: 1300px;
+  height: 700px;
+
+  margin-left : -650px;
+  margin-top  : -350px;
+}
+
+.grid_item {
+  background-color: #ddd;
+  text-align: center;
+  font-family: monospace;
+  line-height: 1.3;
+
+  border: 3px solid #000;
+  border-radius: 15px;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  height: 135px;
+  box-shadow: 10px 10px rgb(255, 187, 0);
+
+  transition: box-shadow 0.35s;
+}
+
+.grid_item:hover {
+  box-shadow: 0px 0px 85px rgb(0, 0, 0);;
+}
+
+.item {
+  /* for button to contact page */
+  background-color: #ddd;
+  text-align: center;
+  font-family: monospace;
+
+  line-height: 1.3;
+
   border: none;
 
-  margin-top: 59px;
-  margin-left: 201px;
+  font-size: 20px;
+  font-weight: bold;
 
-  z-index: 5;
+  height: 120px;
+
+  animation: myAnimation 2s;
 }
 
-.yolo_planet img{
-  width: 380px;
+.mod_ext{
+  /* for links to modal datasets */
+  text-decoration: none;
+  background-color: rgb(255, 187, 0);
+
+  color: #000000;
+
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 0px 30px;
+
+  box-shadow: 8px 8px rgb(0, 0, 0);
 }
 
-.yolo_planet:hover{
-  filter:drop-shadow(0 0 35px rgb(255, 161, 94));
-}
+.mod_ext:hover{
+  background-color:rgb(0, 0, 0);
 
-.ml_planet{
-  position: absolute;
+  color: #ffffff;
 
-  background: none;
-  border: none;
-
-  margin-top: 435px;
-  margin-left: 980px;
-
-  z-index: 5;
-}
-
-.ml_planet img{
-  width: 368px;
-}
-
-.ml_planet:hover{
-  filter:drop-shadow(0 0 58px rgb(149, 220, 255));
-}
-
-.sea_planet{
-  position: absolute;
-
-  background: none;
-  border: none;
-
-  margin-top: 500px;
-  margin-left: 255px;
-
-  z-index: 5;
-}
-
-.sea_planet img{
-  width: 301px;
-}
-
-.sea_planet:hover{
-  filter:drop-shadow(0 0 58px rgb(255, 124, 235));
-}
-
-.port_planet{
-  position: absolute;
-
-  background: none;
-  border: none;
-
-  margin-top: 2px;
-  margin-left: 520px;
-
-  z-index: 5;
-}
-
-.port_planet img{
-  width: 240px;
-}
-
-.port_planet:hover{
-  filter:drop-shadow(0 0 58px rgb(34, 255, 0));
-}
-
-.trail{
-  position: absolute;
-
-  width: 1410px;
-  height: 630px;
-
-  margin-left : -750px;
-  margin-top  : -315px;
-
-  animation: fadeIn 3.5s ease-in-out;
-
-  flex-shrink: 0;
-}
-
-.star{
-  position: absolute;
-
-  background: none;
-  border: none;
-
-  margin-top: 55px;
-  margin-left: 980px;
-
-  animation: fadeIn 3s ease-in-out;
-}
-
-.star img{
-  width: 500px;
-
-  animation: fadeIn 3s ease-in-out;
-  filter:drop-shadow(0 0 40px rgb(255, 241, 42));
-}
-
-.star:hover{
-  filter:drop-shadow(0 0 35px rgb(255, 252, 208));
+  box-shadow: 8px 8px rgb(255, 187, 0);
 }
 
 .modal{
@@ -169,7 +158,7 @@ body{
   border-color: black;
   border-radius: 10px;
 
-  background-color: rgb(255, 243, 247);
+  background-color: rgb(222, 222, 222);
   z-index: 10;
 
   width: 1200px;
@@ -222,15 +211,16 @@ body{
   display: flex;
   flex-direction: column;
 
-  margin-top: 3px;
+  margin-top: 8px;
   gap: 26px;
 
-  line-height: 1.3;
+  line-height: 1.5;
   text-align: justify;
   align-items: center;
 }
 
 .view_things{
+  /* view proj on git */
   font-size: 25px;
   margin-bottom: 18px;
 
@@ -270,67 +260,28 @@ body{
   z-index: 8;
 }
 
-.contact{
-  position: absolute;
+.back_button{
+  text-decoration: none;
+  background-color: rgb(180, 0, 0);
+  color: white;
   font-family: monospace;
-  color: rgb(255, 222, 176);
-  font-size: 18px;
-  text-align: center;
+  font-size: 16px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: 2px black;
+  border-style: solid;
 
-  margin-top: 280px;
-  margin-left: 1179px;
+  position:fixed;
+  left:0;
+  bottom:0;
 
-  animation: fadeIn 4s ease-in-out;
+  margin-left: 13px;
+  margin-bottom: 13px;
 
-  z-index: 6;
+  box-shadow: 5px 5px black;
 }
 
-.yolo_title{
-  position: absolute;
-  font-family: monospace;
-  color: rgb(255, 222, 176);
-  font-size: 18px;
-  text-align: center;
-
-  margin-top: 240px;
-  margin-left: 247px;
+.back_button:hover{
+  background-color: rgb(255, 0, 0);
 }
 
-.sea_title{
-  position: absolute;
-  font-family: monospace;
-  color: rgb(255, 222, 176);
-  font-size: 18px;
-  text-align: center;
-
-  margin-top: 648px;
-  margin-left: 382px;
-
-  z-index: 6;
-}
-
-.ml_title{
-  position: absolute;
-  font-family: monospace;
-  color: rgb(255, 222, 176);
-  font-size: 18px;
-  text-align: center;
-
-  margin-top: 600px;
-  margin-left: 1072px;
-
-  z-index: 6;
-}
-
-.port_title{
-  position: absolute;
-  font-family: monospace;
-  color: rgb(255, 222, 176);
-  font-size: 18px;
-  text-align: center;
-
-  margin-top: 126px;
-  margin-left: 590px;
-
-  z-index: 6;
-}

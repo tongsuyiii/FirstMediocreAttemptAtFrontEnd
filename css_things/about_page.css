@@ -1,6 +1,12 @@
 body{
-  background-color: rgb(62, 0, 135);
   animation: fadeIn 1s ease-in-out;
+
+  background-image: url('/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/ab.jpg');
+  background-size: cover;                
+  background-position: center;           
+  background-repeat: no-repeat;       
+  background-attachment: fixed;        
+  min-height: 100vh;  
 }
 
 @keyframes fadeIn {
@@ -29,25 +35,30 @@ a:active{
   align-items: center;
 
   left: 50%;
-  top: 50%;
+  top: 36%;
 
-  width: 1200px;
+  width: 1130px;
   height: 146px;
 
   min-width: 1000px;
 
-  margin-left : -600px;
+  margin-left : -565px;
   margin-top  : -73px;
 }
 
 .about_title{
   flex: 1;
 
-  font-size: 65px;
-  font-family: monospace;
-  color: rgb(255, 222, 176);
+  font-size: 69px;
+  font-family: 'Arial Black', sans-serif;
+  font-style: italic;
 
-  margin-bottom: 5px;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1px black; 
+  
+  letter-spacing: -5px;
+
+  margin-bottom: 0px;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -61,11 +72,14 @@ a:active{
   width: 100%;
   text-align: justify;
 
-  font-size: 21px;
-  font-family: monospace;
-  color: rgb(255, 222, 176);
+  font-size: 28px;
+  font-family: 'Arial Black', sans-serif;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1px black; 
 
-  line-height: 1.7;
+  text-shadow: 0px 0px 35px black;
+
+  line-height: 1.5;
 }
 
 .continue_button{
@@ -74,28 +88,52 @@ a:active{
   align-items: center; 
   justify-content: center;
 
-  font-size: 18px;
+  font-size: 20px;
   font-family: monospace;
 
-  background-color: rgb(255, 234, 206);
+  background-color: rgb(255, 187, 0);
   color: black;
 
-  width: 295px;
+  width: 330px;
   height: 100%;
 
   border-radius: 15px;
   border-style: solid;
-  border-color: rgb(0, 223, 7);
+  border-color: black;
   border-width: 2.3px;
+  box-shadow: 10px 10px rgb(0, 0, 0);
 
   transition: box-shadow 0.35s;
 
   padding: 15px 90px;
 
-  margin-top: 21px;
+  margin-top: 15px;
 }
 
 .continue_button:hover{
-  box-shadow: 0 0 73px rgb(0, 240, 8);
+  box-shadow: 0 0 73px rgb(0, 0, 0);
 }
 
+.back_button{
+  background-color: rgb(180, 0, 0);
+  color: white;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: 2px black;
+  border-style: solid;
+
+  position:fixed;
+  left:0;
+  bottom:0;
+
+  margin-left: 13px;
+  margin-bottom: 13px;
+
+  box-shadow: 5px 5px black;
+}
+
+.back_button:hover{
+  background-color: rgb(255, 0, 0);
+}

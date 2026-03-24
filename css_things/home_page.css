@@ -1,6 +1,12 @@
 body{
-  background-color: rgb(62, 0, 135);
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+
+  background-image: url('/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/q.jpg');
+  background-size: cover;               
+  background-position: center;           
+  background-repeat: no-repeat;          
+  background-attachment: fixed;          
+  min-height: 100vh;  
 }
 
 @keyframes fadeIn {
@@ -45,30 +51,38 @@ a:active{
   left: 50%;
   top: 50%;
 
-  width: 1200px;
-  height: 160px;
+  width: 1380px;
+  height: 170px;
 
-  margin-left : -600px;
-  margin-top  : -80px;
+  margin-left : -690px;
+  margin-top  : -85px;
 }
 
 .welcome_text{
   flex: 1;
-  font-size: 65px;
-  color: rgb(255, 222, 176);
+
+  font-size: 76px;
+  color: rgb(24, 22, 20);
+  font-family: 'Arial Black', sans-serif;
+  font-style: italic;
+
   margin-bottom: 0px;
   margin-top: 0px;
 
+  -webkit-text-stroke: 1px white;
+
+  letter-spacing: -5px;
+
   animation-name: slide_in_left;
-  animation-duration: 2.4s;
+  animation-duration: 2s;
 }
 
 .continue_button{
   flex: 2;
-  font-size: 18px;
+  font-size: 20px;
   font-family: monospace;
 
-  background-color: rgb(255, 234, 206);
+  background-color: rgb(255, 187, 0);
   color: black;
 
   width: 500px;
@@ -76,16 +90,18 @@ a:active{
 
   border-radius: 15px;
   border-style: solid;
-  border-color: rgb(0, 223, 7);
+  border-color: black;
   border-width: 2.3px;
+
+  box-shadow: 10px 10px rgb(0, 0, 0);
 
   transition: box-shadow 0.35s;
 
-  padding: 15px 90px;
+  padding: 18px 90px;
 }
 
 .continue_button:hover{
-  box-shadow: 0 0 73px rgb(0, 240, 8);
+  box-shadow: 0 0 73px black;
 }
 
 .exit_button{
@@ -98,11 +114,11 @@ a:active{
 
   border-radius: 20px;
   border-style: solid;
-  border-color: rgb(193, 0, 0);
-  border-width: 1.8px;
+  border-color: rgb(0, 0, 0);
+  border-width: 2px;
 
   transition: box-shadow 0.35s;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
 .exit_button:hover{
@@ -112,24 +128,7 @@ a:active{
   animation-name: spin;
 }
 
-#spongebob_crying_popup{
-  position: fixed;              
-  top: 73%;
-  left: 21%;
-  transform: translate(-50%, -50%);
-            
-  width: 500px;
-  max-width: 90%;
-  border-style: solid;
-  border-color: rgb(255, 234, 206);
-
-  opacity: 0;
-
-  transition: opacity 1s ease;
-  pointer-events: none;
-  z-index: 1000;
+.exit_button:active{
+  cursor: not-allowed;
 }
 
-#spongebob_crying_popup.show{
-  opacity: 1;
-}
