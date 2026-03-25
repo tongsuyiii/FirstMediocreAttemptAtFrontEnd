@@ -1,7 +1,7 @@
 body{
   animation: fadeIn 1s ease-in-out;
 
-  background-image: url('/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/t.jpg');
+  background-image: url('../images_things/t.jpg');
   background-size: cover;                
   background-position: center;           
   background-repeat: no-repeat;          
@@ -29,7 +29,7 @@ body{
 }
 
 *{
-  cursor: url("/Users/suyi/FirstMediocreAttemptAtFrondEnd/images_things/maple_cursor.png"), auto;
+  cursor: url("../images_things/maple_cursor.png"), auto;
 }
 
 .middle_grid{
@@ -157,6 +157,7 @@ body{
   border-style: solid;
   border-color: black;
   border-radius: 10px;
+  border-width: 4px;
 
   background-color: rgb(222, 222, 222);
   z-index: 10;
