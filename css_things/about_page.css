@@ -1,7 +1,7 @@
 body{
   animation: fadeIn 1s ease-in-out;
 
-  background-image: url('../images_things/ab.jpg');
+  background-image: url('../images_things/about.jpg');
   background-size: cover;                
   background-position: center;           
   background-repeat: no-repeat;       

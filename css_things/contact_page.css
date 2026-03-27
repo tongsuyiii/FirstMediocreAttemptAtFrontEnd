@@ -1,11 +1,11 @@
 body{
   animation: fadeIn 1s ease-in-out;
 
-  background-image: url('../images_things/k.jpg');
+  background-image: url('../images_things/contact.jpg');
   background-size: cover;                
   background-position: center;          
   background-repeat: no-repeat;         
-  background-attachment: fixed;         
+  background-attachment: fixed;
   min-height: 100vh;  
 }
 
@@ -62,7 +62,7 @@ a:active{
 
   margin-bottom: 15px;
   margin-top: 0px;
-  margin-left: 0px;
+  margin-left: 20px;
   margin-right: 0px;
 
   align-self: flex-start;
@@ -95,7 +95,7 @@ a:active{
   border-width: 8px;
 
   margin-right: 23px;
-  margin-left: 0px;
+  margin-left: 20px;
 
   box-shadow: 0 0 55px rgb(255, 184, 20);
   transition: box-shadow 0.35s;
