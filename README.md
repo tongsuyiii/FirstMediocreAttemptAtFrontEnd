@@ -1,0 +1,2 @@
+# Personal Website Portfolio
+This is my website portfolio that I worked on after graduating from university. It was my very first time attempting and learning frontend. All pages used either flexboxes or grids, and the website is still mostly static. As you read this, I would have ventured even further into frontend. Albeit simple, I am personally very proud of this website, and I hope you too take joy in looking at it.
