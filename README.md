@@ -3,7 +3,7 @@ This is my personal website portfolio that I worked on after graduating from uni
 
 ## How to Run
 1. Download or clone the repo
-2. Go into `html_things` and open `index.html` in your browser 
+2. Open `index.html` in your browser 
 
 Please note that this was designed and optimised for large screens only.
 
