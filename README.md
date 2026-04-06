@@ -8,7 +8,7 @@ This is my personal website portfolio that I worked on after graduating from uni
 Please note that this was designed and optimised for large screens only.
 
 ## Live Demo
-[View Here]()
+[View Here](https://tongsuyiii.github.io/FirstMediocreAttemptAtFrontEnd/)
 
 
 ## Preview
